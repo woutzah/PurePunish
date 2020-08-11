@@ -1,0 +1,20 @@
+############################################################
+# +------------------------------------------------------+ #
+# |            General Settings PurePunish               | #
+# +------------------------------------------------------+ #
+############################################################
+#server name that appears in the mysql database (nice to have for bungee)
+server-name: 'Survival'
+
+#amount of days when a punishment's weight is not counted anymore for auto-commands
+punishment-timer-days: 7
+#amount of records per player history page
+punishmenthistory-page-amount: 5
+
+#database info
+mysql:
+  host: 'localhost'
+  port: '3306'
+  database: 'purepunish'
+  username: 'root'
+  password: 'wouter'

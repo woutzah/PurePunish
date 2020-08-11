@@ -1,0 +1,399 @@
+reasons:
+  #a list of all types of punishments
+  #you can add as much punishment types as you want, just copy this section and add a new unique number
+  1:
+    type: 'Begging'
+    scope: 'Survival'
+    #amount of weight a certain severity adds to a player's account
+    mild: 1
+    medium: 3
+    severe: 5
+    #add as much aliases as you want
+    aliases:
+      - 'beg'
+      - 'annoying'
+    #commands that get auto send to the server when a player reaches a certain milestone
+    #you can add as much milestones as you want!
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> --sender=<issuer> --sender-uuid=<uuid> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'warn <player> second auto warn for begging!'
+        weight-milestone: 2
+      3:
+        command: 'ban <player> auto ban for begging!'
+        weight-milestone: 12
+  2:
+    type: 'Swearing'
+    scope: 'Survival'
+    mild: 1
+    medium: 3
+    severe: 5
+    aliases:
+      - 'Swear'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 2
+      3:
+        command: 'mute <player> 10min <reason> server:<scope>'
+        weight-milestone: 3
+      4:
+        command: 'mute <player> 20min <reason> server:<scope>'
+        weight-milestone: 4
+      5:
+        command: 'mute <player> 30min <reason> server:<scope>'
+        weight-milestone: 5
+      6:
+        command: 'mute <player> 1h <reason> server:<scope>'
+        weight-milestone: 6
+      7:
+        command: 'mute <player> 2h <reason> server:<scope>'
+        weight-milestone: 7
+      8:
+        command: 'tempban <player> 1h <reason> server:<scope>'
+        weight-milestone: 8
+      9:
+        command: 'tempban <player> 4h <reason> server:<scope>'
+        weight-milestone: 9
+      10:
+        command: 'tempban <player> 1d <reason> server:<scope>'
+        weight-milestone: 10
+      11:
+        command: 'tempban <player> 1week <reason> server:<scope>'
+        weight-milestone: 11
+      12:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 12
+  3:
+    type: 'Trolling'
+    scope: 'Survival'
+    mild: 1
+    medium: 3
+    severe: 5
+    aliases:
+      - 'troll'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'mute <player> 10min <reason> server:<scope>'
+        weight-milestone: 3
+      3:
+        command: 'mute <player> 20min <reason> server:<scope>'
+        weight-milestone: 4
+      4:
+        command: 'mute <player> 30min <reason> server:<scope>'
+        weight-milestone: 5
+      5:
+        command: 'tempban <player> 1h <reason> server:<scope>'
+        weight-milestone: 6
+      6:
+        command: 'tempban <player> 6h <reason> server:<scope>'
+        weight-milestone: 7
+      7:
+        command: 'tempban <player> 1d <reason> server:<scope>'
+        weight-milestone: 8
+      8:
+        command: 'tempban <player> 1week <reason> server:<scope>'
+        weight-milestone: 9
+      9:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 10
+  4:
+    type: 'Hacking'
+    scope: 'Survival'
+    mild: 1
+    medium: 2
+    severe: 3
+    aliases:
+      - 'hack'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'tempban <player> 2week <reason> server:<scope>'
+        weight-milestone: 2
+      3:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 3
+
+  5:
+    type: 'Advertising'
+    scope: 'global'
+    mild: 1
+    medium: 3
+    severe: 5
+    aliases:
+      - 'ad'
+    auto-commands:
+      1:
+        command: 'mute <player> 1h <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 3
+  6:
+    type: 'Disrespecting'
+    scope: 'Survival'
+    mild: 1
+    medium: 3
+    severe: 5
+    aliases:
+      - 'disrespect'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'mute <player> 10min <reason> server:<scope>'
+        weight-milestone: 3
+      3:
+        command: 'mute <player> 20min <reason> server:<scope>'
+        weight-milestone: 4
+      4:
+        command: 'mute <player> 30min <reason> server:<scope>'
+        weight-milestone: 5
+      5:
+        command: 'mute <player> 1h <reason> server:<scope>'
+        weight-milestone: 6
+      6:
+        command: 'mute <player> 2h <reason> server:<scope>'
+        weight-milestone: 7
+      7:
+        command: 'tempban <player> 1h <reason> server:<scope>'
+        weight-milestone: 8
+      8:
+        command: 'tempban <player> 6h <reason> server:<scope>'
+        weight-milestone: 9
+      9:
+        command: 'tempban <player> 1d <reason> server:<scope>'
+        weight-milestone: 10
+      11:
+        command: 'tempban <player> 1week <reason> server:<scope>'
+        weight-milestone: 11
+      12:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 12
+  7:
+    type: 'Spam'
+    scope: 'Survival'
+    mild: 1
+    medium: 2
+    severe: 5
+    aliases:
+      - 'Spamming'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'mute <player> 10min <reason> server:<scope>'
+        weight-milestone: 2
+      3:
+        command: 'mute <player> 30min <reason> server:<scope>'
+        weight-milestone: 3
+      4:
+        command: 'mute <player> 1h <reason> server:<scope>'
+        weight-milestone: 4
+      5:
+        command: 'mute <player> 6h <reason> server:<scope>'
+        weight-milestone: 5
+      6:
+        command: 'mute <player> 1d <reason> server:<scope>'
+        weight-milestone: 6
+      7:
+        command: 'tempban <player> 6h <reason> server:<scope>'
+        weight-milestone: 7
+      8:
+        command: 'tempban <player> 1d <reason> server:<scope>'
+        weight-milestone: 8
+      9:
+        command: 'tempban <player> 1w <reason> server:<scope>'
+        weight-milestone: 9
+      10:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 10
+
+  8:
+    type: 'Grief'
+    scope: 'Survival'
+    mild: 1
+    medium: 2
+    severe: 3
+    aliases:
+      - 'Griefing'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'kick <player> <reason> server:<scope>'
+        weight-milestone: 2
+      3:
+        command: 'tempban <player> 2h <reason> server:<scope>'
+        weight-milestone: 3
+      4:
+        command: 'tempban <player> 1d <reason> server:<scope>'
+        weight-milestone: 4
+      5:
+        command: 'tempban <player> 1week <reason> server:<scope>'
+        weight-milestone: 5
+      6:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 6
+
+  9:
+    type: 'ChatFilter'
+    scope: 'Survival'
+    mild: 1
+    medium: 3
+    severe: 5
+    aliases:
+      - 'Censor'
+      - 'Filter'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'mute <player> 10min <reason> server:<scope>'
+        weight-milestone: 3
+      3:
+        command: 'mute <player> 30min <reason> server:<scope>'
+        weight-milestone: 4
+      4:
+        command: 'mute <player> 1h <reason> server:<scope>'
+        weight-milestone: 5
+      5:
+        command: 'mute <player> 2h <reason> server:<scope>'
+        weight-milestone: 6
+      6:
+        command: 'tempban <player> 1h <reason> server:<scope>'
+        weight-milestone: 7
+      7:
+        command: 'tempban <player> 6h <reason> server:<scope>'
+        weight-milestone: 8
+      8:
+        command: 'tempban <player> 1d <reason> server:<scope>'
+        weight-milestone: 9
+      9:
+        command: 'tempban <player> 1w <reason> server:<scope>'
+        weight-milestone: 10
+      11:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 11
+
+  10:
+    type: 'ChestShop_Scam'
+    scope: 'Survival'
+    mild: 1
+    medium: 3
+    severe: 5
+    aliases:
+      - 'CShopScam'
+      - 'ShopScam'
+      - 'Scam'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'mute <player> 10min <reason> server:<scope>'
+        weight-milestone: 2
+      3:
+        command: 'mute <player> 30min <reason> server:<scope>'
+        weight-milestone: 3
+      4:
+        command: 'mute <player> 1h <reason> server:<scope>'
+        weight-milestone: 4
+      5:
+        command: 'tempban <player> 1h <reason> server:<scope>'
+        weight-milestone: 5
+      6:
+        command: 'tempban <player> 6h <reason> server:<scope>'
+        weight-milestone: 6
+      7:
+        command: 'tempban <player> 1d <reason> server:<scope>'
+        weight-milestone: 7
+      8:
+        command: 'tempban <player> 1w <reason> server:<scope>'
+        weight-milestone: 8
+      9:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 9
+
+  11:
+    type: 'Impersonation'
+    scope: 'Survival'
+    mild: 1
+    medium: 3
+    severe: 5
+    aliases:
+      - 'Impersonating'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'mute <player> 10min <reason> server:<scope>'
+        weight-milestone: 2
+      3:
+        command: 'mute <player> 30min <reason> server:<scope>'
+        weight-milestone: 3
+      4:
+        command: 'mute <player> 1h <reason> server:<scope>'
+        weight-milestone: 4
+      5:
+        command: 'mute <player> 2h <reason> server:<scope>'
+        weight-milestone: 5
+      6:
+        command: 'tempban <player> 6h <reason> server:<scope>'
+        weight-milestone: 6
+      7:
+        command: 'tempban <player> 24h <reason> server:<scope>'
+        weight-milestone: 7
+      8:
+        command: 'tempban <player> 1w <reason> server:<scope>'
+        weight-milestone: 8
+      9:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 9
+
+  12:
+    type: 'Exploits'
+    scope: 'Survival'
+    mild: 1
+    medium: 3
+    severe: 5
+    aliases:
+      - 'Exploiting'
+      - 'Exploit'
+    auto-commands:
+      1:
+        command: 'warn <player> <reason> server:<scope>'
+        weight-milestone: 1
+      2:
+        command: 'kick <player> <reason> server:<scope>'
+        weight-milestone: 2
+      3:
+        command: 'tempban <player> 1h <reason> server:<scope>'
+        weight-milestone: 3
+      4:
+        command: 'tempban <player> 6h <reason> server:<scope>'
+        weight-milestone: 4
+      5:
+        command: 'tempban <player> 24h <reason> server:<scope>'
+        weight-milestone: 5
+      6:
+        command: 'tempban <player> 1w <reason> server:<scope>'
+        weight-milestone: 6
+      7:
+        command: 'ban <player> <reason> server:<scope>'
+        weight-milestone: 7

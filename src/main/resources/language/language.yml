@@ -1,0 +1,56 @@
+######[ Parameters languagefile]#####################################
+#  <player> = player name                                           #
+#  <pnum> = page number                                             #
+#  <type> = punishment type e.g. swearing                           #
+#  <reason> = punishment reason                                     #
+#  <date> = punishment date                                         #
+#  <server> = server punishment was issued on (nice for bungeecord) #
+#  <number> = wrong argument that has been passed                   #
+#####################################################################
+# (keep parameters in the same message,                             #
+#  you can replace them but not swap them from message!)            #
+#####################################################################
+general:
+  no-permission: '&c&lPP&f&l>> &cNo permission!'
+  notexist-player: '&c&lPP&f&l>> &cPlayer doesn''t exist!'
+  no-name: '&c&lPP&f&l>> &cYou didn''t specify a name!'
+
+#messages used with the /punish command
+punishment:
+  no-punishtype: '&c&lPP&f&l>> &cYou didn''t specify a punishmenttype!'
+  notexist-punishtype: '&c&lPP&f&l>> &cThis punish type does not exist!'
+  no-severity: '&c&lPP&f&l>> &cYou didn''t specify a severity!'
+  no-right-severity: '&c&lPP&f&l>> &cYou didn''t specify a correct severity!'
+  #can be plain text like: "standard reason", "bad behavior", ..
+  #or <type> which converts to the reason they are banned for e.g. Swearing, Begging, ..
+  standard-reason: '<type>'
+  player-punished: '&c&lPP&f&l>> &6<player> &ahas been punished!'
+  player-exempt: '&c&lPP&f&l>> &cThis player can not be punished!'
+  error-punished: '&c&lPP&f&l>> &cSomething went wrong punishing this player! Contact Woutzah.'
+
+#messages used with the /punishhistory command
+punishmenthistory:
+  punishment-header: '&f&l>&f&m--&f&l>>    &6<player>''s History &f| &6Page &f<pnum>    &f&l<<&f&m--&f&l<\n'
+  punishment-entry: '&7(&cX&7) &f<type> &c- &7<reason> &f: &b<date> &7(&d<server>&7)\n'
+  punishment-footer: '&f&l&m-----------------------------------'
+  no-number: '&c&lPP&f&l>> &6<number> &cis not a number!'
+  notexist-page: '&c&lPP&f&l>> &cThat punishhistory page doesn''t exist!'
+  no-punishments: '&c&lPP&f&l>> &6<player> &7has no punishments yet!'
+
+#messages used with the /punishreasons command
+punishmenttypes:
+  type-header: '&f&l>&f&m--&f&l>> &cPunish Reasons &f&l<<&f&m--&f&l<\n'
+  type-entry: '&7(&6O&7) &f&o<type>\n'
+  type-footer: '&f&l&m----------------------'
+
+#messages used with the /punishexempt command
+punishmentexempt:
+  exempt-header: '&f&l>&f&m--&f&l>> &cExempted Players &f&l<<&f&m--&f&l<\n'
+  exempt-entry: '&7(&c-&7) &f<player>\n'
+  exempt-footer: '&f&l&m------------------------'
+  no-action: '&c&lPP&f&l>> &cYou didn''t specifiy add/remove/list'
+  notexist-action: '&c&lPP&f&l>> Not a valid action!'
+  list-added: '&c&lPP&f&l>> &6<player> &7has been &aadded &7to the exemptlist!'
+  list-removed: '&c&lPP&f&l>> &6<player> &7has been &cremoved &7from the exemptlist!'
+  list-already-added: '&c&lPP&f&l>> &cThis player is already added!'
+  list-cannot-remove: '&c&lPP&f&l>> &cThis player isn''t in the exemptlist!'

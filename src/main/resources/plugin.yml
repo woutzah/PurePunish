@@ -1,0 +1,32 @@
+name: PurePunish
+version: 1.1
+main: be.woutzah.purepunish.PurePunish
+api-version: 1.13
+authors: [Woutzah]
+description: Enhanced and strict punishmentsystem!
+commands:
+  punish:
+    description: main purepunish command
+    permission: purepunish.punishment
+    usage: /punish
+    aliases: [purepunish]
+  punishreasons:
+    description: shows a list of punishreasons
+    permission: purepunish.punishmentreasons
+    usage: /punishreasons
+    aliases: [preasons]
+  punishhistory:
+    description: shows a player's past punishments
+    permission: purepunish.punishmenthistory
+    usage: /punishhistory
+    aliases: [phistory]
+  punishexempt:
+    description: add/remove/list exempted players
+    permission: purepunish.exempt.manage
+    usage: /punishexempt
+    aliases: [pexempt]
+  punishreload:
+    description: reload the exempt/reasons files
+    permission: purepunish.reload
+    usage: /punishreload
+    aliases: [preload]
